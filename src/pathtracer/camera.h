@@ -78,13 +78,13 @@ class Camera {
 
   /**
    * Returns a world-space ray from the camera that corresponds to a
-   * ray exiting the camera that deposits light at the sensor plane
-   * position given by (x,y).  x and y are provided in the normalized
-   * coordinate space of the sensor.  For example (0.5, 0.5)
-   * corresponds to the middle of the screen.
+   * ray exiting the camera that deposits light on the sensor plane,
+   * positioned in normalized image space given by (x,y).  x and y are
+   * provided in the normalized coordinate space of the image / output
+   * device.  For example (0.5, 0.5) corresponds to the middle of the screen.
    *
-   * \param x x-coordinate of the ray sample in the view plane
-   * \param y y-coordinate of the ray sample in the view plane
+   * \param x x-coordinate of the pixel in normalized image space
+   * \param y y-coordinate of the pixel in normalized image space
    */
   Ray generate_ray(double x, double y) const;
 
