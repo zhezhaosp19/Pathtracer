@@ -4,7 +4,7 @@
 
 ## Deadlines
 
-| <span style="font-weight:normal">[Checkpoint Quiz](https://www.gradescope.com/courses/83189)</span> | **Tuesday 03/10, 11:59PM** |
+| <span style="font-weight:normal">[Checkpoint Quiz](https://www.gradescope.com/courses/83189)</span> | **Wednesday 03/11, 11:59PM** |
 |:-------------------------------------------------------:|:--------------------------:|
 |  <span style="font-weight:normal">Assignment 3-1</span>   | **Tuesday 03/17, 11:59PM** |
 
