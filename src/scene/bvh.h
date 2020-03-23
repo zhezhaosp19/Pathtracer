@@ -33,7 +33,9 @@ struct BVHNode {
   BBox bb;        ///< bounding box of the node
   BVHNode* l;     ///< left child node
   BVHNode* r;     ///< right child node
-
+  std::vector<Primitive *> left;
+  std::vector<Primitive *> right;
+    
   std::vector<Primitive*>::const_iterator start;
   std::vector<Primitive*>::const_iterator end;
 };

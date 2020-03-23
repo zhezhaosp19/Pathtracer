@@ -1,0 +1,1471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		DB4A545DCB8748F2972E23B7 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = EC752EC74586405D9523B7BA /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				4E4BF66AE64946449ECCC2EC /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		E34E542DA35848CB824C07B3 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C1F9C8A7871F4FCD8D9DDEDB /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				53124BF0309148B0A76BACA8 /* CMake Rules */,
+			);
+			dependencies = (
+				075B2EF2EF0141B7B8418F39 /* PBXTargetDependency */,
+				B70CCEF7A9434FBE8E659B1F /* PBXTargetDependency */,
+				2B2CEC9C593D42989D665693 /* PBXTargetDependency */,
+				6B974C305CD049F69AFE35AF /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		EEB25FBB80DF4D0392A474A2 /* uninstall */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 847C1247408C422681154E29 /* Build configuration list for PBXAggregateTarget "uninstall" */;
+			buildPhases = (
+				F3549DAB433E492AAF5FDC92 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = uninstall;
+			productName = uninstall;
+		};
+		F32CD8A99C194387910EA1CF /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4C4FED4F8FFF4BDF88E39910 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				87DC1FF5BEE547BEB897DE46 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				4F93A326E8574F8F93B14B46 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		000839804E2C434994687A9A /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glew/src/glewinfo.c */ = {isa = PBXBuildFile; fileRef = 931E6125FAAA4A2BA5B18892 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glew/src/glewinfo.c */; };
+		01BA07181AE74B37AC9B0D46 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/viewer.cpp */ = {isa = PBXBuildFile; fileRef = 2F286381A6944CEE8A3F82EC /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/viewer.cpp */; };
+		12273DCCBF7B4A229D893F52 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/internal.h */ = {isa = PBXBuildFile; fileRef = 4E848FE986D04B34827BA947 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/internal.h */; };
+		12F4EA5848DA4142894FD444 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/monitor.c */ = {isa = PBXBuildFile; fileRef = B1F9676FD69546929018040D /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/monitor.c */; settings = {COMPILER_FLAGS = "-Wdeclaration-after-statement"; }; };
+		217F420E1985407E947D677F /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/tinyxml2.cpp */ = {isa = PBXBuildFile; fileRef = A4D940203C874965AE6F27A4 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/tinyxml2.cpp */; };
+		23A593B906B747AAA6FA8C51 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/egl_context.h */ = {isa = PBXBuildFile; fileRef = 38B6896F72514B7F97E59D4F /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/egl_context.h */; };
+		2FEFA9CF4520431896569101 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/matrix4x4.cpp */ = {isa = PBXBuildFile; fileRef = FB39350ADE234E1CBBF88C76 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/matrix4x4.cpp */; };
+		30ABD8E4DE1043EEA3F4CDE5 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/cocoa_init.m */ = {isa = PBXBuildFile; fileRef = 353FBBD6075442B998F05E72 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/cocoa_init.m */; };
+		311EE765A866433D87DE0F3D /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/context.c */ = {isa = PBXBuildFile; fileRef = 6C23A5A4540F45EA971BE429 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/context.c */; settings = {COMPILER_FLAGS = "-Wdeclaration-after-statement"; }; };
+		394A6E5350C7410BBBF48414 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/xcode/CGL/deps/glfw/src/glfw_config.h */ = {isa = PBXBuildFile; fileRef = 3F9C461F0E624461B0526DA9 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/xcode/CGL/deps/glfw/src/glfw_config.h */; };
+		3C63145A242A4E47B249736D /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/nsgl_context.m */ = {isa = PBXBuildFile; fileRef = CD73A4E9D1E7475CABEF1319 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/nsgl_context.m */; };
+		424565F641684A80A35A2D19 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/osdfont.cpp */ = {isa = PBXBuildFile; fileRef = F8EC51660F894143A60F2FF2 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/osdfont.cpp */; };
+		42BF69A506C9499E9A6197D2 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 54FD24F939ED4D7E990F3DD7 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/CMakeLists.txt */; };
+		432B42A200AE4E93BEDC132C /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/cocoa_window.m */ = {isa = PBXBuildFile; fileRef = 39CB18B33C7B40FBB21AE079 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/cocoa_window.m */; };
+		495FB34659BA478E99ECDAE4 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/osmesa_context.h */ = {isa = PBXBuildFile; fileRef = CA3C0AA4B3DE43A3B87D1032 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/osmesa_context.h */; };
+		49D6D1BC9FD64F6BB1A02C34 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/vector4D.cpp */ = {isa = PBXBuildFile; fileRef = 8759C4592FDF43F0A925B74F /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/vector4D.cpp */; };
+		5078EA1D27CF41D6A7748070 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/spectrum.cpp */ = {isa = PBXBuildFile; fileRef = 6B28806BA11E4F698D515526 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/spectrum.cpp */; };
+		56F530EA7B764714984D8C37 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/osdtext.cpp */ = {isa = PBXBuildFile; fileRef = CAAA59C320B54928A5F19496 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/osdtext.cpp */; };
+		5FE404756D6C41C290244808 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/nsgl_context.h */ = {isa = PBXBuildFile; fileRef = 7047C2A269E548DF8B0A4331 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/nsgl_context.h */; };
+		60C10C978ADF4E5C8C4A5C37 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/egl_context.c */ = {isa = PBXBuildFile; fileRef = A2E11D1A335340B7914DB7D6 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/egl_context.c */; settings = {COMPILER_FLAGS = "-Wdeclaration-after-statement"; }; };
+		62E9449DA18F435FB7CE0527 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/vulkan.c */ = {isa = PBXBuildFile; fileRef = 28A560AC377742BEA3D78D46 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/vulkan.c */; settings = {COMPILER_FLAGS = "-Wdeclaration-after-statement"; }; };
+		6421F4D7206242849519CCDD /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/cocoa_monitor.m */ = {isa = PBXBuildFile; fileRef = B5F8CD6A5E7A46A6AC14A719 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/cocoa_monitor.m */; };
+		68CAFD2DAB234E8B848B897A /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/base64.cpp */ = {isa = PBXBuildFile; fileRef = E9FD1D2C9371486A93ED7984 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/base64.cpp */; };
+		7B14F7EE9BBF47CC8897C285 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/vector2D.cpp */ = {isa = PBXBuildFile; fileRef = 825D3B3BC7D6445480DFEED1 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/vector2D.cpp */; };
+		7B9CAF1FAD2843FEAD8E7DDF /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = C54C802DFF6B46EF9402B779 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/CMakeLists.txt */; };
+		80064E3A6B00454ABE89315F /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/color.cpp */ = {isa = PBXBuildFile; fileRef = BFB6CAB91F8140D3AE334CAD /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/color.cpp */; };
+		8559E177FB484E9396E8A6EA /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/vector3D.cpp */ = {isa = PBXBuildFile; fileRef = D4AB48C92E364D0087CE8763 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/vector3D.cpp */; };
+		8D248769B3E84BB8B0F7C390 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/include/GLFW/glfw3.h */ = {isa = PBXBuildFile; fileRef = A9AF3E41DC56455E9E5F13BD /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/include/GLFW/glfw3.h */; };
+		935ED9D5D59447C5A9FBE005 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/posix_thread.h */ = {isa = PBXBuildFile; fileRef = 21A2BD0EC911475EA1DA92C4 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/posix_thread.h */; };
+		97C60CB484144ABC8099CD22 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/cocoa_joystick.h */ = {isa = PBXBuildFile; fileRef = 5D0E755BFEF54B38BDAD389A /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/cocoa_joystick.h */; };
+		985C4313837345A5A7C04B59 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glew/src/glew.c */ = {isa = PBXBuildFile; fileRef = BE19230D61C14D4BB56E5CDA /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glew/src/glew.c */; };
+		9C914A76B5CE47DC8E31E638 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/posix_thread.c */ = {isa = PBXBuildFile; fileRef = F8677EC97E9B4032A7E53A3E /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/posix_thread.c */; };
+		9E1F5DB0ABAB47BF886B0FE9 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/include/GLFW/glfw3native.h */ = {isa = PBXBuildFile; fileRef = 420323CEC57A4205B57E049B /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/include/GLFW/glfw3native.h */; };
+		A07EF3D78BF944E2A25F6AEA /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/osmesa_context.c */ = {isa = PBXBuildFile; fileRef = 38B81D4CD3DA4A1298371F96 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/osmesa_context.c */; settings = {COMPILER_FLAGS = "-Wdeclaration-after-statement"; }; };
+		A88FFBDBC7FE48D48DE18FD5 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/complex.cpp */ = {isa = PBXBuildFile; fileRef = 7F0DFDB53C0D49C984FDCC4D /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/complex.cpp */; };
+		ADCA983FEC4045B0A1B95B3A /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/matrix3x3.cpp */ = {isa = PBXBuildFile; fileRef = AD66F8395D4F400EA07905D4 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/matrix3x3.cpp */; };
+		BA3C57613B8441549259EE2A /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/cocoa_joystick.m */ = {isa = PBXBuildFile; fileRef = 00AC1476C86F47E397FA6EDF /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/cocoa_joystick.m */; };
+		C1ADB3A07CE54F529F8A336C /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glew/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 1D8390EE7D7E4E5F9A6BA5C4 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glew/CMakeLists.txt */; };
+		C2ACBAE4E88241BDBD609731 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glew/src/visualinfo.c */ = {isa = PBXBuildFile; fileRef = 5A81C0B0FA904546BD1AEFBE /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glew/src/visualinfo.c */; };
+		C82DB541E4864AE394F4476E /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/window.c */ = {isa = PBXBuildFile; fileRef = E8FC87DAE8E04DDF81487C9B /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/window.c */; settings = {COMPILER_FLAGS = "-Wdeclaration-after-statement"; }; };
+		CC26CAA71CD5431DA650CA53 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/init.c */ = {isa = PBXBuildFile; fileRef = 9B2F47AFCEC841ACA5DB05AE /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/init.c */; settings = {COMPILER_FLAGS = "-Wdeclaration-after-statement"; }; };
+		DCB07BE2195D4A61B8D0E05B /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/path.cpp */ = {isa = PBXBuildFile; fileRef = 600BE020DA494D758B3ABAE9 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/path.cpp */; };
+		E0BE760C4FFD486E8184D99C /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/quaternion.cpp */ = {isa = PBXBuildFile; fileRef = E2414B4D93004A5F8945712D /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/quaternion.cpp */; };
+		E6AC236F2C574E4B84F61DEB /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/cocoa_platform.h */ = {isa = PBXBuildFile; fileRef = 56A73BA24BE74120A7DAAD60 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/cocoa_platform.h */; };
+		F0D8F5B187D94317A54E9669 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/input.c */ = {isa = PBXBuildFile; fileRef = 907DFC9A51844F66BE4B1474 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/input.c */; settings = {COMPILER_FLAGS = "-Wdeclaration-after-statement"; }; };
+		F24740CEDB8248EBA96B992D /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/mappings.h */ = {isa = PBXBuildFile; fileRef = 4A13E559935844049A902A9F /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/mappings.h */; };
+		F3C8BB23164F4026BB2376B4 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/cocoa_time.c */ = {isa = PBXBuildFile; fileRef = 82FDBBBEB4F3439FBB9F6F68 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/cocoa_time.c */; };
+		F706E197CC844E43AC4DADFA /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/lodepng.cpp */ = {isa = PBXBuildFile; fileRef = 1B1E665EFE504DAABB8265D8 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/lodepng.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		1240495E115D43FBA3F6C0A3 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		75E0ABCA2C1F4CEB8E07D91E /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		80CB85CFD43441099EC93AF8 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		9BFFD26CFC4F4A86982C16D7 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		30A3C9EEF8F44D7AA4A0B3F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F562A4181C9E4D9E97C12EC1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2CE0401FFD340A5B93742C7;
+			remoteInfo = glfw;
+		};
+		608390468BDD4DA98972A2FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F562A4181C9E4D9E97C12EC1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E34E542DA35848CB824C07B3;
+			remoteInfo = ALL_BUILD;
+		};
+		76A6F044D5FF44BE94A4E630 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F562A4181C9E4D9E97C12EC1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E462847B8CB14D11823287C1;
+			remoteInfo = glew;
+		};
+		86F2B9EFCDF84C57B300A3E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F562A4181C9E4D9E97C12EC1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB4A545DCB8748F2972E23B7;
+			remoteInfo = ZERO_CHECK;
+		};
+		8B9397BD81714D009584B241 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F562A4181C9E4D9E97C12EC1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2CE0401FFD340A5B93742C7;
+			remoteInfo = glfw;
+		};
+		9D96DB34169349428012CAF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F562A4181C9E4D9E97C12EC1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E462847B8CB14D11823287C1;
+			remoteInfo = glew;
+		};
+		9E283900A5714063B8271601 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F562A4181C9E4D9E97C12EC1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8560AD3C571E497D84FF7E44;
+			remoteInfo = CGL;
+		};
+		DB37E1AE43484D6A891CD94A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F562A4181C9E4D9E97C12EC1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB4A545DCB8748F2972E23B7;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00AC1476C86F47E397FA6EDF /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/cocoa_joystick.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_joystick.m; path = deps/glfw/src/cocoa_joystick.m; sourceTree = SOURCE_ROOT; };
+		130564EF85A04E9E965BE712 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = deps/glfw/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		1B1E665EFE504DAABB8265D8 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/lodepng.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = lodepng.cpp; path = src/lodepng.cpp; sourceTree = SOURCE_ROOT; };
+		1D8390EE7D7E4E5F9A6BA5C4 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glew/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = deps/glew/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		21A2BD0EC911475EA1DA92C4 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/posix_thread.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = posix_thread.h; path = deps/glfw/src/posix_thread.h; sourceTree = SOURCE_ROOT; };
+		28A560AC377742BEA3D78D46 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/vulkan.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = vulkan.c; path = deps/glfw/src/vulkan.c; sourceTree = SOURCE_ROOT; };
+		2F286381A6944CEE8A3F82EC /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/viewer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = viewer.cpp; path = src/viewer.cpp; sourceTree = SOURCE_ROOT; };
+		353FBBD6075442B998F05E72 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/cocoa_init.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_init.m; path = deps/glfw/src/cocoa_init.m; sourceTree = SOURCE_ROOT; };
+		38B6896F72514B7F97E59D4F /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/egl_context.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = egl_context.h; path = deps/glfw/src/egl_context.h; sourceTree = SOURCE_ROOT; };
+		38B81D4CD3DA4A1298371F96 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/osmesa_context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = osmesa_context.c; path = deps/glfw/src/osmesa_context.c; sourceTree = SOURCE_ROOT; };
+		39CB18B33C7B40FBB21AE079 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/cocoa_window.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_window.m; path = deps/glfw/src/cocoa_window.m; sourceTree = SOURCE_ROOT; };
+		3F9C461F0E624461B0526DA9 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/xcode/CGL/deps/glfw/src/glfw_config.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw_config.h; path = ../xcode/CGL/deps/glfw/src/glfw_config.h; sourceTree = SOURCE_ROOT; };
+		420323CEC57A4205B57E049B /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/include/GLFW/glfw3native.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3native.h; path = deps/glfw/include/GLFW/glfw3native.h; sourceTree = SOURCE_ROOT; };
+		4A13E559935844049A902A9F /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/mappings.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mappings.h; path = deps/glfw/src/mappings.h; sourceTree = SOURCE_ROOT; };
+		4E848FE986D04B34827BA947 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/internal.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = internal.h; path = deps/glfw/src/internal.h; sourceTree = SOURCE_ROOT; };
+		54FD24F939ED4D7E990F3DD7 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		56A73BA24BE74120A7DAAD60 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/cocoa_platform.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cocoa_platform.h; path = deps/glfw/src/cocoa_platform.h; sourceTree = SOURCE_ROOT; };
+		5A81C0B0FA904546BD1AEFBE /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glew/src/visualinfo.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = visualinfo.c; path = deps/glew/src/visualinfo.c; sourceTree = SOURCE_ROOT; };
+		5D0E755BFEF54B38BDAD389A /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/cocoa_joystick.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cocoa_joystick.h; path = deps/glfw/src/cocoa_joystick.h; sourceTree = SOURCE_ROOT; };
+		600BE020DA494D758B3ABAE9 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/path.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = path.cpp; path = src/path.cpp; sourceTree = SOURCE_ROOT; };
+		6B28806BA11E4F698D515526 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/spectrum.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = spectrum.cpp; path = src/spectrum.cpp; sourceTree = SOURCE_ROOT; };
+		6C23A5A4540F45EA971BE429 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = context.c; path = deps/glfw/src/context.c; sourceTree = SOURCE_ROOT; };
+		7047C2A269E548DF8B0A4331 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/nsgl_context.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = nsgl_context.h; path = deps/glfw/src/nsgl_context.h; sourceTree = SOURCE_ROOT; };
+		78E02FDC81D7432783DF5778 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		7F0DFDB53C0D49C984FDCC4D /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/complex.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = complex.cpp; path = src/complex.cpp; sourceTree = SOURCE_ROOT; };
+		825D3B3BC7D6445480DFEED1 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/vector2D.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = vector2D.cpp; path = src/vector2D.cpp; sourceTree = SOURCE_ROOT; };
+		82FDBBBEB4F3439FBB9F6F68 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/cocoa_time.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = cocoa_time.c; path = deps/glfw/src/cocoa_time.c; sourceTree = SOURCE_ROOT; };
+		8759C4592FDF43F0A925B74F /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/vector4D.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = vector4D.cpp; path = src/vector4D.cpp; sourceTree = SOURCE_ROOT; };
+		907DFC9A51844F66BE4B1474 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/input.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = input.c; path = deps/glfw/src/input.c; sourceTree = SOURCE_ROOT; };
+		910BD8560EB14F13B6F8E4F8 /* CGL */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libCGL.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		931E6125FAAA4A2BA5B18892 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glew/src/glewinfo.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = glewinfo.c; path = deps/glew/src/glewinfo.c; sourceTree = SOURCE_ROOT; };
+		9B2F47AFCEC841ACA5DB05AE /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/init.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = init.c; path = deps/glfw/src/init.c; sourceTree = SOURCE_ROOT; };
+		A2E11D1A335340B7914DB7D6 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/egl_context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = egl_context.c; path = deps/glfw/src/egl_context.c; sourceTree = SOURCE_ROOT; };
+		A4D940203C874965AE6F27A4 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/tinyxml2.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = tinyxml2.cpp; path = src/tinyxml2.cpp; sourceTree = SOURCE_ROOT; };
+		A9AF3E41DC56455E9E5F13BD /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/include/GLFW/glfw3.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3.h; path = deps/glfw/include/GLFW/glfw3.h; sourceTree = SOURCE_ROOT; };
+		AD66F8395D4F400EA07905D4 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/matrix3x3.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = matrix3x3.cpp; path = src/matrix3x3.cpp; sourceTree = SOURCE_ROOT; };
+		B1F9676FD69546929018040D /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/monitor.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = monitor.c; path = deps/glfw/src/monitor.c; sourceTree = SOURCE_ROOT; };
+		B5F8CD6A5E7A46A6AC14A719 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/cocoa_monitor.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_monitor.m; path = deps/glfw/src/cocoa_monitor.m; sourceTree = SOURCE_ROOT; };
+		BE19230D61C14D4BB56E5CDA /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glew/src/glew.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = glew.c; path = deps/glew/src/glew.c; sourceTree = SOURCE_ROOT; };
+		BFB6CAB91F8140D3AE334CAD /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/color.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = color.cpp; path = src/color.cpp; sourceTree = SOURCE_ROOT; };
+		C54C802DFF6B46EF9402B779 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = deps/glfw/src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		CA3C0AA4B3DE43A3B87D1032 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/osmesa_context.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = osmesa_context.h; path = deps/glfw/src/osmesa_context.h; sourceTree = SOURCE_ROOT; };
+		CAAA59C320B54928A5F19496 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/osdtext.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = osdtext.cpp; path = src/osdtext.cpp; sourceTree = SOURCE_ROOT; };
+		CD73A4E9D1E7475CABEF1319 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/nsgl_context.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = nsgl_context.m; path = deps/glfw/src/nsgl_context.m; sourceTree = SOURCE_ROOT; };
+		D4AB48C92E364D0087CE8763 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/vector3D.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = vector3D.cpp; path = src/vector3D.cpp; sourceTree = SOURCE_ROOT; };
+		E2414B4D93004A5F8945712D /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/quaternion.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = quaternion.cpp; path = src/quaternion.cpp; sourceTree = SOURCE_ROOT; };
+		E847714991564071A8489EE5 /* glew */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglew.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8FC87DAE8E04DDF81487C9B /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/window.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = window.c; path = deps/glfw/src/window.c; sourceTree = SOURCE_ROOT; };
+		E9FD1D2C9371486A93ED7984 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/base64.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = base64.cpp; path = src/base64.cpp; sourceTree = SOURCE_ROOT; };
+		F0B45310BF4945BD9C63CFD6 /* glfw */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglfw3.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8677EC97E9B4032A7E53A3E /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/posix_thread.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = posix_thread.c; path = deps/glfw/src/posix_thread.c; sourceTree = SOURCE_ROOT; };
+		F8EC51660F894143A60F2FF2 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/osdfont.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = osdfont.cpp; path = src/osdfont.cpp; sourceTree = SOURCE_ROOT; };
+		FB39350ADE234E1CBBF88C76 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/matrix4x4.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = matrix4x4.cpp; path = src/matrix4x4.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0EE94AD281B94AD7B7D04FA6 /* GLFW3 */ = {
+			isa = PBXGroup;
+			children = (
+				2E71F96006AD430092B33662 /* uninstall */,
+				6D2AF94A9305461EAB415832 /* glfw */,
+			);
+			name = GLFW3;
+			sourceTree = "<group>";
+		};
+		1119816CF2184C1B85822AE9 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE19230D61C14D4BB56E5CDA /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glew/src/glew.c */,
+				931E6125FAAA4A2BA5B18892 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glew/src/glewinfo.c */,
+				5A81C0B0FA904546BD1AEFBE /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glew/src/visualinfo.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		187E9AE54DED409AB082760D /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				443BFE11F1304B7BB0B6EFF5 /* CMake Rules */,
+				78E02FDC81D7432783DF5778 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		1AE538B4DE3843978404D4DF /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				E9FD1D2C9371486A93ED7984 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/base64.cpp */,
+				BFB6CAB91F8140D3AE334CAD /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/color.cpp */,
+				7F0DFDB53C0D49C984FDCC4D /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/complex.cpp */,
+				1B1E665EFE504DAABB8265D8 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/lodepng.cpp */,
+				AD66F8395D4F400EA07905D4 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/matrix3x3.cpp */,
+				FB39350ADE234E1CBBF88C76 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/matrix4x4.cpp */,
+				F8EC51660F894143A60F2FF2 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/osdfont.cpp */,
+				CAAA59C320B54928A5F19496 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/osdtext.cpp */,
+				600BE020DA494D758B3ABAE9 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/path.cpp */,
+				E2414B4D93004A5F8945712D /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/quaternion.cpp */,
+				6B28806BA11E4F698D515526 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/spectrum.cpp */,
+				A4D940203C874965AE6F27A4 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/tinyxml2.cpp */,
+				825D3B3BC7D6445480DFEED1 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/vector2D.cpp */,
+				D4AB48C92E364D0087CE8763 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/vector3D.cpp */,
+				8759C4592FDF43F0A925B74F /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/vector4D.cpp */,
+				2F286381A6944CEE8A3F82EC /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/viewer.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		1C02DD31A4994E5E909879A5 /* glew */ = {
+			isa = PBXGroup;
+			children = (
+				1119816CF2184C1B85822AE9 /* Source Files */,
+				1D8390EE7D7E4E5F9A6BA5C4 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glew/CMakeLists.txt */,
+			);
+			name = glew;
+			sourceTree = "<group>";
+		};
+		2E71F96006AD430092B33662 /* uninstall */ = {
+			isa = PBXGroup;
+			children = (
+				E5E0AC67A97344458B07F2FA /* CMake Rules */,
+				130564EF85A04E9E965BE712 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/CMakeLists.txt */,
+			);
+			name = uninstall;
+			sourceTree = "<group>";
+		};
+		2F2296D8EA8C405982BDA8E1 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				353FBBD6075442B998F05E72 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/cocoa_init.m */,
+				00AC1476C86F47E397FA6EDF /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/cocoa_joystick.m */,
+				B5F8CD6A5E7A46A6AC14A719 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/cocoa_monitor.m */,
+				82FDBBBEB4F3439FBB9F6F68 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/cocoa_time.c */,
+				39CB18B33C7B40FBB21AE079 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/cocoa_window.m */,
+				6C23A5A4540F45EA971BE429 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/context.c */,
+				A2E11D1A335340B7914DB7D6 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/egl_context.c */,
+				9B2F47AFCEC841ACA5DB05AE /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/init.c */,
+				907DFC9A51844F66BE4B1474 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/input.c */,
+				B1F9676FD69546929018040D /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/monitor.c */,
+				CD73A4E9D1E7475CABEF1319 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/nsgl_context.m */,
+				38B81D4CD3DA4A1298371F96 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/osmesa_context.c */,
+				F8677EC97E9B4032A7E53A3E /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/posix_thread.c */,
+				28A560AC377742BEA3D78D46 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/vulkan.c */,
+				E8FC87DAE8E04DDF81487C9B /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/window.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		443BFE11F1304B7BB0B6EFF5 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		6D2AF94A9305461EAB415832 /* glfw */ = {
+			isa = PBXGroup;
+			children = (
+				C55B74B7512243FBBF41BF6C /* Header Files */,
+				2F2296D8EA8C405982BDA8E1 /* Source Files */,
+				C54C802DFF6B46EF9402B779 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/CMakeLists.txt */,
+			);
+			name = glfw;
+			sourceTree = "<group>";
+		};
+		88AEDC566E174CFB91A3DE5E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				910BD8560EB14F13B6F8E4F8 /* CGL */,
+				E847714991564071A8489EE5 /* glew */,
+				F0B45310BF4945BD9C63CFD6 /* glfw */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		98F3A4CE49044986B5E223F1 = {
+			isa = PBXGroup;
+			children = (
+				F0704379A56644C6BCC41977 /* CGL */,
+				187E9AE54DED409AB082760D /* ALL_BUILD */,
+				1C02DD31A4994E5E909879A5 /* glew */,
+				0EE94AD281B94AD7B7D04FA6 /* GLFW3 */,
+				88AEDC566E174CFB91A3DE5E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C55B74B7512243FBBF41BF6C /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				A9AF3E41DC56455E9E5F13BD /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/include/GLFW/glfw3.h */,
+				420323CEC57A4205B57E049B /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/include/GLFW/glfw3native.h */,
+				5D0E755BFEF54B38BDAD389A /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/cocoa_joystick.h */,
+				56A73BA24BE74120A7DAAD60 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/cocoa_platform.h */,
+				38B6896F72514B7F97E59D4F /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/egl_context.h */,
+				4E848FE986D04B34827BA947 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/internal.h */,
+				4A13E559935844049A902A9F /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/mappings.h */,
+				7047C2A269E548DF8B0A4331 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/nsgl_context.h */,
+				CA3C0AA4B3DE43A3B87D1032 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/osmesa_context.h */,
+				21A2BD0EC911475EA1DA92C4 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/posix_thread.h */,
+				3F9C461F0E624461B0526DA9 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/xcode/CGL/deps/glfw/src/glfw_config.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		E5E0AC67A97344458B07F2FA /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		F0704379A56644C6BCC41977 /* CGL */ = {
+			isa = PBXGroup;
+			children = (
+				1AE538B4DE3843978404D4DF /* Source Files */,
+				54FD24F939ED4D7E990F3DD7 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/CMakeLists.txt */,
+			);
+			name = CGL;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8560AD3C571E497D84FF7E44 /* CGL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A824DC1686A74D589E35FB5F /* Build configuration list for PBXNativeTarget "CGL" */;
+			buildPhases = (
+				E7D71BCE4A09481797FF5F18 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B62F6B08EE0A407EB733581A /* PBXTargetDependency */,
+				16F7D075719E4822BF78BDF8 /* PBXTargetDependency */,
+				AF3CF9A880244D16B0D4D68D /* PBXTargetDependency */,
+			);
+			name = CGL;
+			productName = CGL;
+			productReference = 910BD8560EB14F13B6F8E4F8 /* CGL */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D2CE0401FFD340A5B93742C7 /* glfw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B76F5805ABF457A8E6CEF3B /* Build configuration list for PBXNativeTarget "glfw" */;
+			buildPhases = (
+				89A075516B3242CAB7207448 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = glfw;
+			productName = glfw;
+			productReference = F0B45310BF4945BD9C63CFD6 /* glfw */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E462847B8CB14D11823287C1 /* glew */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93AAF6DC040B4176B9F11AFB /* Build configuration list for PBXNativeTarget "glew" */;
+			buildPhases = (
+				88232CA416434FF795E7DF68 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = glew;
+			productName = glew;
+			productReference = E847714991564071A8489EE5 /* glew */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F562A4181C9E4D9E97C12EC1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1130;
+			};
+			buildConfigurationList = E9160F2179854F91A515B013 /* Build configuration list for PBXProject "CGL" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				9BFFD26CFC4F4A86982C16D7 /* Debug */,
+				1240495E115D43FBA3F6C0A3 /* Release */,
+				75E0ABCA2C1F4CEB8E07D91E /* MinSizeRel */,
+				80CB85CFD43441099EC93AF8 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 98F3A4CE49044986B5E223F1;
+			projectDirPath = ../../CGL;
+			projectRoot = "";
+			targets = (
+				E34E542DA35848CB824C07B3 /* ALL_BUILD */,
+				8560AD3C571E497D84FF7E44 /* CGL */,
+				DB4A545DCB8748F2972E23B7 /* ZERO_CHECK */,
+				E462847B8CB14D11823287C1 /* glew */,
+				D2CE0401FFD340A5B93742C7 /* glfw */,
+				F32CD8A99C194387910EA1CF /* install */,
+				EEB25FBB80DF4D0392A474A2 /* uninstall */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19757CF74B94405AA1146B35 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		4E0EA8A2213A43FEB68971E7 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		4E4BF66AE64946449ECCC2EC /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/xcode/CGL -f /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/xcode/CGL/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		53124BF0309148B0A76BACA8 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/xcode/CGL -f /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/xcode/CGL/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		53D72FFAE9624FC7B7831BFD = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		87DC1FF5BEE547BEB897DE46 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/xcode/CGL -f /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/xcode/CGL/CMakeScripts/install_postBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		AFFAC9A3BE6442DFB6D0A71F = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		F3549DAB433E492AAF5FDC92 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/xcode/CGL/deps/glfw -f /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/xcode/CGL/deps/glfw/CMakeScripts/uninstall_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		88232CA416434FF795E7DF68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				985C4313837345A5A7C04B59 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glew/src/glew.c */,
+				000839804E2C434994687A9A /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glew/src/glewinfo.c */,
+				C2ACBAE4E88241BDBD609731 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glew/src/visualinfo.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89A075516B3242CAB7207448 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30ABD8E4DE1043EEA3F4CDE5 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/cocoa_init.m */,
+				BA3C57613B8441549259EE2A /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/cocoa_joystick.m */,
+				6421F4D7206242849519CCDD /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/cocoa_monitor.m */,
+				F3C8BB23164F4026BB2376B4 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/cocoa_time.c */,
+				432B42A200AE4E93BEDC132C /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/cocoa_window.m */,
+				311EE765A866433D87DE0F3D /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/context.c */,
+				60C10C978ADF4E5C8C4A5C37 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/egl_context.c */,
+				CC26CAA71CD5431DA650CA53 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/init.c */,
+				F0D8F5B187D94317A54E9669 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/input.c */,
+				12F4EA5848DA4142894FD444 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/monitor.c */,
+				3C63145A242A4E47B249736D /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/nsgl_context.m */,
+				A07EF3D78BF944E2A25F6AEA /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/osmesa_context.c */,
+				9C914A76B5CE47DC8E31E638 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/posix_thread.c */,
+				62E9449DA18F435FB7CE0527 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/vulkan.c */,
+				C82DB541E4864AE394F4476E /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src/window.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7D71BCE4A09481797FF5F18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68CAFD2DAB234E8B848B897A /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/base64.cpp */,
+				80064E3A6B00454ABE89315F /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/color.cpp */,
+				A88FFBDBC7FE48D48DE18FD5 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/complex.cpp */,
+				F706E197CC844E43AC4DADFA /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/lodepng.cpp */,
+				ADCA983FEC4045B0A1B95B3A /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/matrix3x3.cpp */,
+				2FEFA9CF4520431896569101 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/matrix4x4.cpp */,
+				424565F641684A80A35A2D19 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/osdfont.cpp */,
+				56F530EA7B764714984D8C37 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/osdtext.cpp */,
+				DCB07BE2195D4A61B8D0E05B /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/path.cpp */,
+				E0BE760C4FFD486E8184D99C /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/quaternion.cpp */,
+				5078EA1D27CF41D6A7748070 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/spectrum.cpp */,
+				217F420E1985407E947D677F /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/tinyxml2.cpp */,
+				7B14F7EE9BBF47CC8897C285 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/vector2D.cpp */,
+				8559E177FB484E9396E8A6EA /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/vector3D.cpp */,
+				49D6D1BC9FD64F6BB1A02C34 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/vector4D.cpp */,
+				01BA07181AE74B37AC9B0D46 /* /Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/src/viewer.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		075B2EF2EF0141B7B8418F39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8560AD3C571E497D84FF7E44 /* CGL */;
+			targetProxy = 9E283900A5714063B8271601 /* PBXContainerItemProxy */;
+		};
+		16F7D075719E4822BF78BDF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2CE0401FFD340A5B93742C7 /* glfw */;
+			targetProxy = 30A3C9EEF8F44D7AA4A0B3F5 /* PBXContainerItemProxy */;
+		};
+		2B2CEC9C593D42989D665693 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2CE0401FFD340A5B93742C7 /* glfw */;
+			targetProxy = 8B9397BD81714D009584B241 /* PBXContainerItemProxy */;
+		};
+		4F93A326E8574F8F93B14B46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E34E542DA35848CB824C07B3 /* ALL_BUILD */;
+			targetProxy = 608390468BDD4DA98972A2FF /* PBXContainerItemProxy */;
+		};
+		6B974C305CD049F69AFE35AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB4A545DCB8748F2972E23B7 /* ZERO_CHECK */;
+			targetProxy = DB37E1AE43484D6A891CD94A /* PBXContainerItemProxy */;
+		};
+		AF3CF9A880244D16B0D4D68D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB4A545DCB8748F2972E23B7 /* ZERO_CHECK */;
+			targetProxy = 86F2B9EFCDF84C57B300A3E3 /* PBXContainerItemProxy */;
+		};
+		B62F6B08EE0A407EB733581A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E462847B8CB14D11823287C1 /* glew */;
+			targetProxy = 9D96DB34169349428012CAF4 /* PBXContainerItemProxy */;
+		};
+		B70CCEF7A9434FBE8E659B1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E462847B8CB14D11823287C1 /* glew */;
+			targetProxy = 76A6F044D5FF44BE94A4E630 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		01ECA9DE868B4980AC090687 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/xcode/CGL/deps/glfw";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		16F82980E2264F59B297719C /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/xcode/CGL/deps/glfw";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		1BD15A2D23F5494AAB84C606 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H,GLEW_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/include","/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src","/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/xcode/CGL/deps/glfw/src");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "       -DNDEBUG -fPIC -Wall '-std=c99'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/xcode/CGL/deps/glfw/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		1D9E5D5FF86A4B2E86038050 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = "/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/xcode/CGL/build";
+			};
+			name = MinSizeRel;
+		};
+		23344869F3414D20891EE9C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = "/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/xcode/CGL/build";
+			};
+			name = Release;
+		};
+		26D733747AF143B6A5F61317 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/xcode/CGL";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		28AFBD28E855453DB9220608 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/xcode/CGL/deps/glfw";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		2A16617396D6445C9B467417 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glew/include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glew;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/xcode/CGL/deps/glew";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		2C92737E1C1946CA905A9FB2 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/xcode/CGL";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		2D7810F8A3B147BA96BCEB7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/xcode/CGL";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		2FEA2A768D224B35906943C9 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H,GLEW_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/include","/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src","/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/xcode/CGL/deps/glfw/src");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    -DNDEBUG -fPIC -Wall '-std=c99'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/xcode/CGL/deps/glfw/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		3022C0DB82B2429EBDD4924B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/xcode/CGL";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		35D17FDE360B43E596826B9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/xcode/CGL";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		40B29B7243B2461CBECCA47E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/xcode/CGL";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		53F07AFCF12E4DFEB5297E20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H,GLEW_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/include","/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src","/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/xcode/CGL/deps/glfw/src");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    -DNDEBUG -fPIC -Wall '-std=c99'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/xcode/CGL/deps/glfw/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		56B5CD78EC58497ABE564864 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/xcode/CGL";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		5F4903C1EDED4806AD0FAC83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/xcode/CGL";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		6030FB6D23B940668690B5CF /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/include","/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/include/CGL",/Library/Frameworks/Mono.framework/Headers,/usr/local/include/freetype2,"/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glew/include","/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -m64      -mavx2     -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = CGL;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/xcode/CGL";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		62D4BE910C86473E920E9E51 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/xcode/CGL";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		79FE43E7D7F54D5D9FAC3EDD /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/include","/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/include/CGL",/Library/Frameworks/Mono.framework/Headers,/usr/local/include/freetype2,"/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glew/include","/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -m64      -mavx2        -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = CGL;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/xcode/CGL";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		857E619070E34859998B62AF /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/xcode/CGL";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		9272688543A54029AA4ACFE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = "/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/xcode/CGL/build";
+			};
+			name = Debug;
+		};
+		9B07E8D3E58B4C4EA11FE3DC /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/xcode/CGL";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		9CCF0E64EB5643979636168C /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glew/include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "       -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glew;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/xcode/CGL/deps/glew";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		A15592C06B9A42E0A395A23D /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/xcode/CGL/deps/glfw";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		A1F38AAD2F8B4FE8B1DDCF2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/xcode/CGL";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		B65983D7A1A14D988A44123E /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = "/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/xcode/CGL/build";
+			};
+			name = RelWithDebInfo;
+		};
+		C1C25389D39543E1BDD6EB4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/include","/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/include/CGL",/Library/Frameworks/Mono.framework/Headers,/usr/local/include/freetype2,"/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glew/include","/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -m64      -mavx2     ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = CGL;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/xcode/CGL";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		CA4827C15F8C441EA0125085 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glew/include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glew;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/xcode/CGL/deps/glew";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		CB9B8D91549641B3A02E2422 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H,GLEW_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/include","/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/src","/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/xcode/CGL/deps/glfw/src");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "   -fPIC -Wall '-std=c99'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/xcode/CGL/deps/glfw/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		DA8BD15FE9304394944A44D2 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glew/include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glew;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/xcode/CGL/deps/glew";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		FB135C58AF3F4ED1A7E787C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/include","/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/include/CGL",/Library/Frameworks/Mono.framework/Headers,/usr/local/include/freetype2,"/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glew/include","/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/CGL/deps/glfw/include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -m64      -mavx2     -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = CGL;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/Emma/Documents/UCB/cs284/p3-1-pathtracer-sp20-zhezhaosp19/xcode/CGL";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C4FED4F8FFF4BDF88E39910 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1F38AAD2F8B4FE8B1DDCF2B /* Debug */,
+				2D7810F8A3B147BA96BCEB7D /* Release */,
+				62D4BE910C86473E920E9E51 /* MinSizeRel */,
+				9B07E8D3E58B4C4EA11FE3DC /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7B76F5805ABF457A8E6CEF3B /* Build configuration list for PBXNativeTarget "glfw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB9B8D91549641B3A02E2422 /* Debug */,
+				53F07AFCF12E4DFEB5297E20 /* Release */,
+				2FEA2A768D224B35906943C9 /* MinSizeRel */,
+				1BD15A2D23F5494AAB84C606 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		847C1247408C422681154E29 /* Build configuration list for PBXAggregateTarget "uninstall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01ECA9DE868B4980AC090687 /* Debug */,
+				28AFBD28E855453DB9220608 /* Release */,
+				16F82980E2264F59B297719C /* MinSizeRel */,
+				A15592C06B9A42E0A395A23D /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		93AAF6DC040B4176B9F11AFB /* Build configuration list for PBXNativeTarget "glew" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA4827C15F8C441EA0125085 /* Debug */,
+				2A16617396D6445C9B467417 /* Release */,
+				DA8BD15FE9304394944A44D2 /* MinSizeRel */,
+				9CCF0E64EB5643979636168C /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A824DC1686A74D589E35FB5F /* Build configuration list for PBXNativeTarget "CGL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1C25389D39543E1BDD6EB4D /* Debug */,
+				FB135C58AF3F4ED1A7E787C2 /* Release */,
+				6030FB6D23B940668690B5CF /* MinSizeRel */,
+				79FE43E7D7F54D5D9FAC3EDD /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C1F9C8A7871F4FCD8D9DDEDB /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56B5CD78EC58497ABE564864 /* Debug */,
+				3022C0DB82B2429EBDD4924B /* Release */,
+				40B29B7243B2461CBECCA47E /* MinSizeRel */,
+				26D733747AF143B6A5F61317 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E9160F2179854F91A515B013 /* Build configuration list for PBXProject "CGL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9272688543A54029AA4ACFE0 /* Debug */,
+				23344869F3414D20891EE9C8 /* Release */,
+				1D9E5D5FF86A4B2E86038050 /* MinSizeRel */,
+				B65983D7A1A14D988A44123E /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EC752EC74586405D9523B7BA /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35D17FDE360B43E596826B9B /* Debug */,
+				5F4903C1EDED4806AD0FAC83 /* Release */,
+				2C92737E1C1946CA905A9FB2 /* MinSizeRel */,
+				857E619070E34859998B62AF /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F562A4181C9E4D9E97C12EC1 /* Project object */;
+}
