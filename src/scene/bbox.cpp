@@ -9,7 +9,6 @@ namespace CGL {
 
 bool BBox::intersect(const Ray& r, double& t0, double& t1) const {
 
-  // TODO (Part 2.2):
   // Implement ray - bounding box intersection test
   // If the ray intersected the bounding box within the range given by
   // t0, t1, update t0 and t1 with the new intersection times.

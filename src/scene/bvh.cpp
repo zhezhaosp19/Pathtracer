@@ -52,7 +52,6 @@ BVHNode *BVHAccel::construct_bvh(std::vector<Primitive *>::iterator start,
                                  std::vector<Primitive *>::iterator end,
                                  size_t max_leaf_size) {
 
-  // TODO (Part 2.1):
   // Construct a BVH from the given vector of primitives and maximum leaf
   // size configuration. The starter code build a BVH aggregate with a
   // single leaf node (which is also the root) that encloses all the
@@ -88,8 +87,6 @@ BVHNode *BVHAccel::construct_bvh(std::vector<Primitive *>::iterator start,
     double sp_x = sp.x;
     double sp_y = sp.y;
     double sp_z = sp.z;
-//    auto left = new std::vector<Primitive *>;
-//    auto right = new std::vector<Primitive *>;
 
     if(ex_x >= ex_y && ex_x >= ex_z) { // split along x axis
         for(auto p = start; p != end; p++) {
@@ -97,10 +94,8 @@ BVHNode *BVHAccel::construct_bvh(std::vector<Primitive *>::iterator start,
             Vector3D cen = bb.centroid();
             if(cen.x <= sp_x) {
                 node->left.push_back(*p);
-//                left->push_back(*p);
             } else {
                 node->right.push_back(*p);
-//                right->push_back(*p);
             }
         }
     }
@@ -111,10 +106,8 @@ BVHNode *BVHAccel::construct_bvh(std::vector<Primitive *>::iterator start,
             Vector3D cen = bb.centroid();
             if(cen.y <= sp_y) {
                 node->left.push_back(*p);
-//                left->push_back(*p);
             } else {
                 node->right.push_back(*p);
-//                right->push_back(*p);
             }
         }
     }
@@ -125,10 +118,8 @@ BVHNode *BVHAccel::construct_bvh(std::vector<Primitive *>::iterator start,
             Vector3D cen = bb.centroid();
             if(cen.z <= sp_z) {
                 node->left.push_back(*p);
-//                left->push_back(*p);
             } else {
                 node->right.push_back(*p);
-//                right->push_back(*p);
             }
         }
     }
@@ -137,12 +128,7 @@ BVHNode *BVHAccel::construct_bvh(std::vector<Primitive *>::iterator start,
     auto end_l = node->left.end();
     auto start_r = node->right.begin();
     auto end_r = node->right.end();
-//    auto start_l = left->begin();
-//    auto end_l = left->end();
-//    auto start_r = right->begin();
-//    auto end_r = right->end();
 
-//        cout<<size<<endl;
     node->l = construct_bvh(start_l, end_l, max_leaf_size);
     node->r = construct_bvh(start_r, end_r, max_leaf_size);
     }
@@ -151,7 +137,6 @@ BVHNode *BVHAccel::construct_bvh(std::vector<Primitive *>::iterator start,
 }
 
 bool BVHAccel::has_intersection(const Ray &ray, BVHNode *node) const {
-  // TODO (Part 2.3):
   // Fill in the intersect function.
   // Take note that this function has a short-circuit that the
   // Intersection version cannot, since it returns as soon as it finds
@@ -171,7 +156,6 @@ bool BVHAccel::has_intersection(const Ray &ray, BVHNode *node) const {
 }
 
 bool BVHAccel::intersect(const Ray &ray, Intersection *i, BVHNode *node) const {
-  // TODO (Part 2.3):
   // Fill in the intersect function.
 
     bool hit = false;

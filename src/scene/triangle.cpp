@@ -23,7 +23,6 @@ Triangle::Triangle(const Mesh *mesh, size_t v1, size_t v2, size_t v3) {
 BBox Triangle::get_bbox() const { return bbox; }
 
 bool Triangle::has_intersection(const Ray &r) const {
-  // Part 1, Task 3: implement ray-triangle intersection
   // The difference between this function and the next function is that the next
   // function records the "intersection" while this function only tests whether
   // there is a intersection.
@@ -47,7 +46,6 @@ bool Triangle::has_intersection(const Ray &r) const {
 }
 
 bool Triangle::intersect(const Ray &r, Intersection *isect) const {
-  // Part 1, Task 3:
   // implement ray-triangle intersection. When an intersection takes
   // place, the Intersection data should be updated accordingly
     if(has_intersection(r) == false) {

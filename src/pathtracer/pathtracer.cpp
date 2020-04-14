@@ -66,10 +66,6 @@ PathTracer::estimate_direct_lighting_hemisphere(const Ray &r,
   // same number of samples for clarity of comparison.
     int num_samples = scene->lights.size() * ns_area_light;
     Spectrum L_out;
-
-  // TODO (Part 3): Write your sampling loop here
-  // TODO BEFORE YOU BEGIN
-  // UPDATE `est_radiance_global_illumination` to return direct lighting instead of normal shading
     
     Spectrum l;
     Spectrum e;
@@ -86,13 +82,11 @@ PathTracer::estimate_direct_lighting_hemisphere(const Ray &r,
             l = isect.bsdf->f(w_out, w_in); // in object frame
             e = next_inter.bsdf->get_emission(); // in object frame (emission from next intersection point)
             L_out += l * e * cos_theta(w_in);
-//            L_out += l;
         }
     }
     Spectrum lighting = L_out * 2.0 * PI / num_samples;
 
     return lighting;
-//    return L_out;
 }
 
 Spectrum
@@ -145,12 +139,10 @@ PathTracer::estimate_direct_lighting_importance(const Ray &r,
     }
     
     return L_out;
-//    return Spectrum(1.0);
 }
 
 Spectrum PathTracer::zero_bounce_radiance(const Ray &r,
                                           const Intersection &isect) {
-  // TODO: Part 3, Task 2
   // Returns the light that results from no bounces of light
     if(isect.t < r.min_t || isect.t > r.max_t) {
         return Spectrum(0.0);
@@ -161,7 +153,6 @@ Spectrum PathTracer::zero_bounce_radiance(const Ray &r,
 
 Spectrum PathTracer::one_bounce_radiance(const Ray &r,
                                          const Intersection &isect) {
-  // TODO: Part 3, Task 3
   // Returns either the direct illumination by hemisphere or importance sampling
   // depending on `direct_hemisphere_sample`
     if(isect.t < r.min_t || isect.t > r.max_t) {
@@ -172,8 +163,6 @@ Spectrum PathTracer::one_bounce_radiance(const Ray &r,
     } else {
         return estimate_direct_lighting_importance(r, isect);
     }
-
-//    return Spectrum(1.0);
 }
 
 Spectrum PathTracer::at_least_one_bounce_radiance(const Ray &r,
@@ -220,7 +209,6 @@ Spectrum PathTracer::est_radiance_global_illumination(const Ray &r) {
   Intersection isect;
   Spectrum L_out;
 
-  // You will extend this in assignment 3-2.
   // If no intersection occurs, we simply return black.
   // This changes if you implement hemispherical lighting for extra credit.
 
@@ -233,25 +221,16 @@ Spectrum PathTracer::est_radiance_global_illumination(const Ray &r) {
   // on whether ray intersection with triangles or spheres has
   // been implemented.
 
-  // REMOVE THIS LINE when you are ready to begin Part 3.
-//    L_out = (isect.t == INF_D) ? debug_shading(r.d) : normal_shading(isect.n);
-
-  // TODO (Part 3): Return the direct illumination.
-//    L_out = zero_bounce_radiance(r, isect) + one_bounce_radiance(r, isect);
-  // TODO (Part 4): Accumulate the "direct" and "indirect"
-  // parts of global illumination into L_out rather than just direct
     L_out = zero_bounce_radiance(r, isect) + at_least_one_bounce_radiance(r, isect);
     return L_out;
 }
 
 void PathTracer::raytrace_pixel(size_t x, size_t y) {
 
-  // TODO (Part 1.1):
   // Make a loop that generates num_samples camera rays and traces them
   // through the scene. Return the average Spectrum.
   // You should call est_radiance_global_illumination in this function.
 
-  // TODO (Part 5):
   // Modify your implementation to include adaptive sampling.
   // Use the command line parameters "samplesPerBatch" and "maxTolerance"
 
@@ -262,12 +241,6 @@ void PathTracer::raytrace_pixel(size_t x, size_t y) {
     Spectrum radiance;
     double s1 = 0;
     double s2 = 0;
-
-//    if(num_samples == 1) {
-//        Ray ray = this->camera->generate_ray((x + 0.5)/width, (y + 0.5)/height);
-//        ray.depth = this->max_ray_depth;
-//        radiance = est_radiance_global_illumination(ray);
-//    }
     
     int i = 0;
     for(i = 0; i < num_samples; i++) {
@@ -292,17 +265,13 @@ void PathTracer::raytrace_pixel(size_t x, size_t y) {
             s1 += est_illu.illum();
             s2 += est_illu.illum() * est_illu.illum();
 
-        }
-//    }
+    }
     
 
     radiance = radiance * (1.0 / i);
 
     sampleBuffer.update_pixel(radiance, x, y);
     sampleCountBuffer[x + y * sampleBuffer.w] = i;
-    
-//    sampleBuffer.update_pixel(Spectrum(0.2, 1.0, 0.8), x, y);
-//    sampleCountBuffer[x + y * sampleBuffer.w] = num_samples;
 }
 
 } // namespace CGL
