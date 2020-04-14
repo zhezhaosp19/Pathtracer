@@ -20,8 +20,7 @@ Secondly, compute the normal of the triangle with Barycentric Coordinate (1 – 
 
 Finally, update the max_t to the new t and also update the n, t, primitive and bsdf of the intersection points.
 
-<p style="text-align:center">
-    <img src="https://github.com/zhezhaosp19/Path-Tracer/tree/master/docs/images/part1/CBspheres.png" align="middle" width="400px" /></p>
+![library](https://github.com/zhezhaosp19/Path-Tracer/tree/master/docs/images/part1/CBspheres.png)
 <div align="center">
             <table style="width=100%">
                 <tr>
@@ -40,4 +39,8 @@ Finally, update the max_t to the new t and also update the n, t, primitive and b
                 </tr>
             </table>
         </div>
+        
+<h2 align="middle">Part 2: Bounding Volume Hierarchy</h2>
+
+In the part2, I implement Bounding Volume Hierarchy (BVH) in order to accelerate the ray tracing. BVH is a binary tree structure where there is a rood node and followed by left and right child node. The internal nodes store bounding boxes, and left and right child nodes, while leaf nodes store bounding box and list of objects. 
 
