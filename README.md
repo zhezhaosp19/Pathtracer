@@ -19,7 +19,7 @@ Secondly, compute the normal of the triangle with Barycentric Coordinate (1 – 
 
 Finally, update the max_t to the new t and also update the n, t, primitive and bsdf of the intersection points.
 
-![library](https://github.com/zhezhaosp19/Path-Tracer/tree/master/docs/images/part1/CBspheres.png)
+![library](https://github.com/cal-cs184-student/p3-1-pathtracer-sp20-zhezhaosp19/tree/master/docs/images/part1/CBspheres.png)
 
 <div align="center">
             <table style="width=100%">
